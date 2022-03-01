@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+    /* Colors */
+    --bg-clr: #fff;
+    --container-bg: #f8f8f8;
+    --heading-clr: #212121;
+    --text-clr: #333;
+    
+    /* Font families */
+    --heading-font: 'Anton', sans-serif;
+    --text-font: 'Playfair Display', serif;
+    
+    /* Other Stuffs */
+    --transition-duration: 200ms;
+  }
+  
+  *, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+
+    background: var(--bg-clr);
+    transition: background var(--transition-duration) ease-in-out;
+  }
+body.dark {
+    --bg-clr: #000;
+    --container-bg: #121212;
+    --heading-clr: #f7f7f7;
+    --text-clr: #a8a8a8;
+  }
+#box{
+    display: block;
+   flex-direction: column;
+   flex-wrap: wrap;
+   margin: 20px;
+   background: var(--container-bg);
+   transition: background var(--transition-duration) ease-in-out;
+}
+#toggle{
+text-decoration: none;
+background-color: black;
+padding: 10px;
+color:aquamarine;
+border: 2px solid aquamarine;
+border-radius: 10px;
+font-family: var(--text-font);
+  background: var(--heading-clr);
+  color: var(--container-bg);
+  transition: color var(--transition-duration) ease-in-out, background var(--transition-duration) ease-in-out;
+}
+
+#header{
+ text-align: center; 
+ padding-top: 40px;
+ border-bottom:2px solid green;
+ color: green ;
+ font-size: 30px;
+ transition: color var(--transition-duration) ease-in-out;
+}
+
+
+#number{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 40px;
+    font-weight: 400;
+    color: green;
+    
+}
+
+#box2{
+    border: 2px solid green;
+    justify-content: center;
+    align-items: space-even;
+    display: flex;
+    margin-top: 250px;
+    border-radius: 10px;
+
+}
+
+#container {
+    background-color: aqua;
+    border: 2px solid green;
+    width: 300px;
+    min-height: 100px;
+    text-align: center;
+    padding-top: 35px;
+    margin:40px;
+    box-shadow: 10px 10px 20px -17px rgba(0, 0, 0, 0.23);
+    border-radius: 10px;
+   
+
+}
